@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+:root{
+    --main-bg-color: #000000;
+}
+
+.navbar{
+    background: var(--main-bg-color) !important;
+}
+.navbar-brand img {
+    height: 53px ;
+}
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+h1 {
+   
+    color: white;
+    background-color: black;
+}
+
+h2  {
+    color: white;
+
+}
+
+
+
+.fondo-negro {
+
+    background-color: black;
+    
+}
+
+.fondo-icon{
+    background-color: aqua;
+    text-align: center;
+}
+
+.tamaño-small{font-size: small; color: #707070;}
+.tamaño-medium {font-size: medium; color: #707070;}
+.tamaño-medium-verde {font-size: medium; color: #28A745; font-weight: bold; }
+.derecha{text-align: right;}
+.color-white {color: white;}
+
+.color-fondo{background-color: #000000;}
+
+/*
+footer{
+    background: var(--main-bg-color);
+}
+*/
+footer img {
+    height: 100px
+    background-color=#000000;
+}
+
+.texto-pie{text-align:center;}
+    
