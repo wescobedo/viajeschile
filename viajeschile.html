@@ -74,43 +74,36 @@
       </nav>
     </header>
 
-<!-- CARRUSEL   d-none d-sm-none d-md-block d-lg-block    
-<section
-class="my-0  mx-4 border-dark"
-></section>
--->
-
-
-<div id="carousel" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+    <div id="carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
 <!-- QUIENES SOMOS-->
 
-<section class="container-fluid fondo-negro " id="quienessomos" > 
+<sec class="container-fluid fondo-negro d-none d-sm-none d-md-block d-lg-block" id="quienessomos" > 
   <h1 class="text-center open-sans-Bold mt-0 display-4  " >
     QUIENES SOMOS
   </h1>
 
-  <div class="row mt-5  " >
+  <div  class="row mt-5" >
      
     <!--tarjeta 1-->
     <div class="col-sm-4 col-12 px-5 mb-4">
@@ -153,13 +146,14 @@ class="my-0  mx-4 border-dark"
       </div>
     </div>
   </div>
+</sec>
 
 <!-- DESTACADOS-->
      
-  <h2 class="text-center open-sans-Bold mt-4 display-6 " id="destacados">
+<section class="container-fluid fondo-negro" id="destacados" > 
+  <h2 class="text-center open-sans-Bold mt-0 display-6 ">
   DESTACADOS
   </h2>
-
   <div class="row mt-5">
   <!--tarjeta 1-->
     <div class="col-sm-3 col-12 px-2 mb-3">
@@ -169,8 +163,8 @@ class="my-0  mx-4 border-dark"
           class="card-img-top"
           alt="..."
         />
-        <div class="card-body">
-          <p class="card-text fs-4">
+        <div class="card-body bg-info">
+          <p class="card-text fs-4"  >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eveniet, incidunt illo rerum est beatae iusto ad, necessitatibus minima sequi, possimus obcaecati optio id quo nihil commodi? Saepe, repudiandae accusantium!
           </p>
         </div>
@@ -187,7 +181,7 @@ class="my-0  mx-4 border-dark"
           alt="..."
           height="191px"
         />
-        <div class="card-body">
+        <div class="card-body bg-info">
           <p class="card-text fs-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex quaerat, magnam vel, suscipit inventore, voluptatem dicta natus culpa error quidem tempora deserunt reprehenderit labore quisquam unde et maxime. Atque?
           </p>
@@ -204,7 +198,7 @@ class="my-0  mx-4 border-dark"
           class="card-img-top"
           alt="..."
         />
-        <div class="card-body">
+        <div class="card-body bg-info ">
           <p class="card-text fs-4">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quis sit id corporis ducimus architecto debitis inventore facilis voluptatum beatae veniam voluptatibus repellendus minima at officiis, sapiente, doloribus molestias error.
           </p>
@@ -221,7 +215,7 @@ class="my-0  mx-4 border-dark"
           cl  ass="card-img-top"
           alt="..."
         />
-        <div class="card-body">
+        <div class="card-body bg-info">
           <p class="card-text fs-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit facere vel sint molestias voluptates reprehenderit velit labore, consequatur nemo rem temporibus unde itaque dignissimos harum adipisci explicabo sequi hic.
           </p>
@@ -230,15 +224,13 @@ class="my-0  mx-4 border-dark"
     </div>
   </div>
 
-
-
   <!-- CONTACTO-->
  
     <h2 class="display-6  text-center my-4 color-white" id="contacto">CONTACTO</h2>
     <p class="text-center d-none d-sm-block my-4">
     </p>
     
-  <form action="">
+    <form action="">
     <div class="mb-3">
     
     <label for="exampleFormControlInput1" class="form-label color-white">Nombre</label>
@@ -271,7 +263,7 @@ class="my-0  mx-4 border-dark"
     </div>
 
     <div class="my-6 text-">
-      <button id="enviarcorreo" class="btn btn-light  btn-mail border border-ligth border-1 p-2" data-toggle="tooltip"
+      <button id="enviarcorreo" class="btn btn-light  btn-mail border border-ligth border-1 p-2" style="background-color: #17a2b8"  data-toggle="tooltip"
       data-placement="bottom" title="Presiona para enviar" href="">Enviar </button>
     <br>
     <br>
@@ -309,7 +301,7 @@ class="my-0  mx-4 border-dark"
       </div>
     </div>
   </div>
-  </section>
+</section>
 </footer>
 
 <!-- Boostrap JS -->
